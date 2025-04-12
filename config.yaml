@@ -1,0 +1,24 @@
+audio_processing:
+  sample_rate: 16000
+  duration: 5
+  channels: 1
+
+model:
+  type: "YAMNet"  # Options: "YAMNet", "PANNs"
+  path: "models/yamnet.h5"
+
+transcription:
+  model: "whisper"  # Options: "whisper"
+  language: "en"
+
+noise_reduction:
+  enabled: true
+  method: "spectral_gating"  # Options: "spectral_gating", "wiener_filter"
+
+nlp:
+  model: "transformers"  # Options: "transformers"
+  task: "sentiment_analysis"  # Options: "sentiment_analysis", "entity_recognition"
+
+logging:
+  level: "INFO"
+  file: "logs/app.log"

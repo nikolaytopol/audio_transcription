@@ -1,0 +1,12 @@
+numpy
+scipy
+librosa
+torch
+transformers
+whisper
+tensorflow
+pandas
+soundfile
+pydub
+scikit-learn
+pyyaml
